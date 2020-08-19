@@ -1,0 +1,3 @@
+/home/xphyro/code/c/em-red-to-blue/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/xphyro/code/c/em-red-to-blue/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/xphyro/code/c/em-red-to-blue/cmake-build-debug/CMakeFiles/em_red_to_blue.dir

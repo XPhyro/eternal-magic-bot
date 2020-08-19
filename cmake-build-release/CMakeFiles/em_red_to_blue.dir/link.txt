@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG   CMakeFiles/em_red_to_blue.dir/main.c.o CMakeFiles/em_red_to_blue.dir/input.c.o CMakeFiles/em_red_to_blue.dir/soln.c.o  -o em_red_to_blue 
