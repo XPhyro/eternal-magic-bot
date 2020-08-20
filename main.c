@@ -21,13 +21,13 @@ int main()
 
     printf("Solving...\n");
     unsigned long long soln = 0;
-    
+
     clock_t diff;
     clock_t begin = clock();
     char issolved = solve(w, h, mat, &soln);
     diff = clock() - begin;
     long msdiff = diff * 1000 / CLOCKS_PER_SEC;
-    
+
     if(issolved)
     {
         printsoln(w, h, soln);
@@ -36,6 +36,6 @@ int main()
     {
         printf("No solution exists.");
     }
-    
+
     printf("Evaluated puzzle in %ld.%ld seconds.", msdiff / 1000, msdiff % 1000);
 }
