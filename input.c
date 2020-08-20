@@ -29,7 +29,7 @@ char *getmat(int w, int h, const char *msg, const char *errmsg)
 {
     printf("%s", msg);
     char *mat = malloc((w * h) * sizeof(char));
-    char *row = malloc((w * 2 + 1) * sizeof(char)); // compensate for spaces
+    char *row = alloca((w * 2 + 1) * sizeof(char)); // max 129 byte allocation (compensating for the spaces)
     char crow = 0;
     while(crow < h)
     {
@@ -78,6 +78,5 @@ char *getmat(int w, int h, const char *msg, const char *errmsg)
         crow++;
     }
 
-    free(row);
     return mat;
 }
