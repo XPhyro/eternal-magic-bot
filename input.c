@@ -1,7 +1,3 @@
-//
-// Created by xphyro on 19/08/2020.
-//
-
 #include <memory.h>
 #include "input.h"
 #include "stdio.h"
@@ -11,7 +7,7 @@ int getsize(const char *msg, const char *errmsg)
 {
     printf("%s", msg);
 
-    while(1)
+    for(;;)
     {
         int size;
         scanf("%d", &size);
@@ -31,23 +27,33 @@ char *getmat(int w, int h, const char *msg, const char *errmsg)
     char *mat = malloc((w * h) * sizeof(char));
     char *row = alloca((w * 2 + 1) * sizeof(char)); // max 129 byte allocation (compensating for the spaces)
     char crow = 0;
+
+    {
+        int c;
+        while((c = getchar()) != '\n' && c != EOF);
+    }
+
     while(crow < h)
     {
         printf("%d> ", crow);
-        scanf("%s", row);
+        fgets(row, w * 2, stdin);
 
-        int i = 0;
-        int j = 0;
-        char err = 0;
-        while(1)
         {
-            char c = row[i++];
-            if(c == '\0')
+            int c;
+            while((c = getchar()) != '\n' && c != EOF);
+        }
+
+        row[strcspn(row, "\r\n")] = '\0';
+
+        int j = 0;
+        for(int i = 0;; i++)
+        {
+            char c = row[i];
+            if(!c)
             {
                 break;
             }
 
-            // TODO: Add support for spaces
             if(c == 'r' || c == '0')
             {
                 row[j++] = '0';
@@ -56,14 +62,9 @@ char *getmat(int w, int h, const char *msg, const char *errmsg)
             {
                 row[j++] = '1';
             }
-            else
-            {
-                err = 1;
-                break;
-            }
         }
 
-        if(err || strlen(row) != w)
+        if(j != w)
         {
             printf("%s", errmsg);
             continue;

@@ -15,7 +15,7 @@ int main()
         return 1;
     }
 
-    char *materr = malloc((32 + 3) * sizeof(char)); // max 2 digit numbers
+    char *materr = malloc((32 + 2) * sizeof(char)); // max 2 digits as size <= 64
     sprintf(materr, "You must enter a row of width %d.\n", w);
     char *mat = getmat(w, h, "Enter the puzzle matrix (r/b):\n", materr);
 

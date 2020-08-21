@@ -18,27 +18,3 @@ stdlib.h
 
 /home/xphyro/code/c/em-red-to-blue/input.h
 
-/home/xphyro/code/c/em-red-to-blue/main.c
-time.h
--
-stdio.h
-/home/xphyro/code/c/em-red-to-blue/stdio.h
-stdlib.h
-/home/xphyro/code/c/em-red-to-blue/stdlib.h
-input.h
-/home/xphyro/code/c/em-red-to-blue/input.h
-soln.h
-/home/xphyro/code/c/em-red-to-blue/soln.h
-
-/home/xphyro/code/c/em-red-to-blue/soln.c
-soln.h
-/home/xphyro/code/c/em-red-to-blue/soln.h
-stdlib.h
-/home/xphyro/code/c/em-red-to-blue/stdlib.h
-memory.h
-/home/xphyro/code/c/em-red-to-blue/memory.h
-stdio.h
-/home/xphyro/code/c/em-red-to-blue/stdio.h
-
-/home/xphyro/code/c/em-red-to-blue/soln.h
-

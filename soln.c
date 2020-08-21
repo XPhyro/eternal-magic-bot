@@ -1,7 +1,3 @@
-//
-// Created by xphyro on 19/08/2020.
-//
-
 #include "soln.h"
 #include "stdlib.h"
 #include "memory.h"

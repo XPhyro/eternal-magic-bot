@@ -1,7 +1,3 @@
-//
-// Created by xphyro on 19/08/2020.
-//
-
 #ifndef EM_RED_TO_BLUE_SOLN_H
 #define EM_RED_TO_BLUE_SOLN_H
 
