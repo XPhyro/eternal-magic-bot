@@ -9,8 +9,10 @@ int getsize(const char *msg, const char *errmsg)
 
     for(;;)
     {
-        int size;
-        scanf("%d", &size);
+        char *sizeInput = malloc((2 + 1) * sizeof(char));
+        fgets(sizeInput, 2, stdin);
+
+        int size = atoi(sizeInput);
 
         if(size > 0)
         {
@@ -37,11 +39,6 @@ char *getmat(int w, int h, const char *msg, const char *errmsg)
     {
         printf("%d> ", crow);
         fgets(row, w * 2, stdin);
-
-        {
-            int c;
-            while((c = getchar()) != '\n' && c != EOF);
-        }
 
         row[strcspn(row, "\r\n")] = '\0';
 
