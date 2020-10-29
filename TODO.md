@@ -1,0 +1,1 @@
+- [ ] Fix bug: Size input consistent of two digits is not parsed as a single size.
