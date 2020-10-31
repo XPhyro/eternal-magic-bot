@@ -10,6 +10,6 @@ This is essentially a re-write of [XPhyro/eternal_magic-bot](https://github.com/
 |       C Release       | 0.11s |  1.4s | 63.4s |
 |    C Release (-O3)    | 0.11s |  1.2s | 63.1s |
 
-The tests were done with all elements of the matrices set to red (0). Versions used were Python 3.8.5 [GCC 10.1.0] and C11 [GCC 10.1.0].
+5x4 is the biggest matrix that exists in the game, but the tests were also executed on bigger matrices to see how the programs would compare. All matrices started with all of their elements set to red (0). Versions used were Python 3.8.5 [GCC 10.1.0] and C11 [GCC 10.1.0].
 
 Note that the difference is affected by the Python version being written poorly as much as by the general performance difference between the two languages.
