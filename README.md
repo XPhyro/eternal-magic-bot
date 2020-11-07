@@ -7,7 +7,6 @@ This is essentially a re-write of [XPhyro/eternal_magic-bot](https://github.com/
 |         Python        | 22.8s |  484s |  nope |
 | Python Multiprocessed |  4.9s | 50.3s | 3527s |
 |        C Debug        | 0.18s |  1.6s |  127s |
-|       C Release       | 0.11s |  1.4s | 63.4s |
 |    C Release (-O3)    | 0.11s |  1.2s | 63.1s |
 
 5x4 is the biggest matrix that exists in the game, but the tests were also executed on bigger matrices to see how the programs would compare. All matrices started with all of their elements set to red (0). Versions used were Python 3.8.5 [GCC 10.1.0] and C11 [GCC 10.1.0].
